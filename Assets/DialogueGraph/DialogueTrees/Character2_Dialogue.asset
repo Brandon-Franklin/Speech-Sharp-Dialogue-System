@@ -1,0 +1,461 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a171cd762148104283954f9fc937950, type: 3}
+  m_Name: Character2_Dialogue
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114870699536470628}
+  - {fileID: 114828698093079934}
+  - {fileID: 114604079151236040}
+  - {fileID: 114186598543459684}
+  - {fileID: 114326708999383578}
+  - {fileID: 114360441625108626}
+  - {fileID: 114327570277824278}
+  - {fileID: 114886797536384786}
+  - {fileID: 114698313179318546}
+  current: {fileID: 0}
+  globalVars: {fileID: 114828698093079934}
+  localVars: {fileID: 114870699536470628}
+  ChatNodes:
+  - {fileID: 114604079151236040}
+  - {fileID: 114186598543459684}
+  - {fileID: 114326708999383578}
+  BranchNodes: []
+  EventNodes:
+  - {fileID: 114360441625108626}
+  - {fileID: 114327570277824278}
+  - {fileID: 114886797536384786}
+  - {fileID: 114698313179318546}
+--- !u!114 &114186598543459684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
+  m_Name: Chat
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 462.07227, y: -70.55551}
+  ports:
+    keys:
+    - input
+    - output
+    - dynamicInput_0
+    values:
+    - _fieldName: input
+      _node: {fileID: 114186598543459684}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dynamicInput_0
+        node: {fileID: 114604079151236040}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 114186598543459684}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: dynamicInput_0
+      _node: {fileID: 114186598543459684}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 114360441625108626}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeName: Chat_1
+  characterDialogue: Sure. Here's a tip on who to talk to for a quest. Speak to me
+    3 times and I'll follow you into battle.
+  voiceAudio: {fileID: 0}
+  answers:
+  - text: Thanks, bye!
+    conditions: 
+    portName: dynamicInput_0
+    conditionTestResults: 0
+  width: 400
+--- !u!114 &114326708999383578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
+  m_Name: Chat
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 462.07224, y: 199.04391}
+  ports:
+    keys:
+    - input
+    - output
+    - dynamicInput_0
+    values:
+    - _fieldName: input
+      _node: {fileID: 114326708999383578}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dynamicInput_1
+        node: {fileID: 114604079151236040}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 114326708999383578}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: dynamicInput_0
+      _node: {fileID: 114326708999383578}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 114360441625108626}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeName: Chat_2
+  characterDialogue: Okay! I'm disposable!
+  voiceAudio: {fileID: 0}
+  answers:
+  - text: Let's go!
+    conditions: 
+    portName: dynamicInput_0
+    conditionTestResults: 0
+  width: 400
+--- !u!114 &114327570277824278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033ebb924d43464ab3c372c8457585f, type: 3}
+  m_Name: Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 460.6228, y: -392.33548}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: 114327570277824278}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dynamicInput_0
+        node: {fileID: 114604079151236040}
+        reroutePoints: []
+      - fieldName: dynamicInput_1
+        node: {fileID: 114604079151236040}
+        reroutePoints: []
+      - fieldName: dynamicInput_2
+        node: {fileID: 114604079151236040}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeName: Event_1
+  cSharpCode: timesSpoken++;
+  width: 156
+--- !u!114 &114360441625108626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033ebb924d43464ab3c372c8457585f, type: 3}
+  m_Name: Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1067.9462, y: 107.72797}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: 114360441625108626}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dynamicInput_0
+        node: {fileID: 114326708999383578}
+        reroutePoints: []
+      - fieldName: dynamicInput_0
+        node: {fileID: 114186598543459684}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeName: Event_0
+  cSharpCode: player.EndConversation();
+  width: 240
+--- !u!114 &114604079151236040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d4b035e8545a04ca8b7c9c33635bcb, type: 3}
+  m_Name: Chat
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -136.55438, y: -58.959846}
+  ports:
+    keys:
+    - input
+    - output
+    - dynamicInput_0
+    - dynamicInput_1
+    - dynamicInput_2
+    values:
+    - _fieldName: input
+      _node: {fileID: 114604079151236040}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 114604079151236040}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: dynamicInput_0
+      _node: {fileID: 114604079151236040}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 114186598543459684}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 114327570277824278}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 114698313179318546}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: dynamicInput_1
+      _node: {fileID: 114604079151236040}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 114326708999383578}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 114327570277824278}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 114698313179318546}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: dynamicInput_2
+      _node: {fileID: 114604079151236040}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: input
+        node: {fileID: 114886797536384786}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 114327570277824278}
+        reroutePoints: []
+      - fieldName: input
+        node: {fileID: 114698313179318546}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  nodeName: Chat_0
+  characterDialogue: Hey, I'm generic reusable dialogue for unimportant NPCs. Ignore
+    me, please.
+  voiceAudio: {fileID: 0}
+  answers:
+  - text: Heard any rumors?
+    conditions: 
+    portName: dynamicInput_0
+    conditionTestResults: 0
+  - text: Follow me and fight with me!
+    conditions: spoken3Times == true
+    portName: dynamicInput_1
+    conditionTestResults: 0
+  - text: Bye!
+    conditions: 
+    portName: dynamicInput_2
+    conditionTestResults: 0
+  width: 400
+--- !u!114 &114698313179318546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033ebb924d43464ab3c372c8457585f, type: 3}
+  m_Name: Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 459.17328, y: -234.34445}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: 114698313179318546}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dynamicInput_0
+        node: {fileID: 114604079151236040}
+        reroutePoints: []
+      - fieldName: dynamicInput_1
+        node: {fileID: 114604079151236040}
+        reroutePoints: []
+      - fieldName: dynamicInput_2
+        node: {fileID: 114604079151236040}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeName: Event_3
+  cSharpCode: "if(timesSpoken > 3){\n    spoken3Times = true;\n}"
+  width: 240
+--- !u!114 &114828698093079934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76fd141803448344dbadfa54cf80346e, type: 3}
+  m_Name: Global Variables
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -139.4533, y: -496.6965}
+  ports:
+    keys: []
+    values: []
+  defineGlobalVariables: 
+  width: 300
+--- !u!114 &114870699536470628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3db30bc49d888845accb25bfd3a9227, type: 3}
+  m_Name: Conversation Variables
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -138.00383, y: -303.91846}
+  ports:
+    keys: []
+    values: []
+  defineConversationVariables: 'int timesSpoken = 0;
+
+    bool spoken3Times = false;'
+  width: 300
+--- !u!114 &114886797536384786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033ebb924d43464ab3c372c8457585f, type: 3}
+  m_Name: Event
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 464.5325, y: 468.20468}
+  ports:
+    keys:
+    - input
+    values:
+    - _fieldName: input
+      _node: {fileID: 114886797536384786}
+      _typeQualifiedName: Dialogue.DialogueBaseNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: dynamicInput_2
+        node: {fileID: 114604079151236040}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  nodeName: Event_2
+  cSharpCode: player.EndConversation();
+  width: 240

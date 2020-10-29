@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/DialogueGraph/Examples/FPS_Example.unity
+  isLoaded: 1
+  isActive: 1
